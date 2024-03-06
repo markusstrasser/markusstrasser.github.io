@@ -41,12 +41,12 @@ blockquote {
   /* min-width: 100%; */
   box-sizing: border-box;
 }
-/* 
+
 ol,
 ul {
   width: 100%;
   margin-left: 1rem;
-} */
+}
 
 h1,
 h2,
@@ -91,7 +91,7 @@ li {
   }
 }
 h1, h2, h3, h4, h5, h6 {
-  margin: 1.5em 0 0.5em;
+  /* margin: 1.5em 0 0.5em; */
   line-height: 1.2;
   font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   font-weight: bold
@@ -464,8 +464,8 @@ line-height: 1.25;
   font-weight: bold; /* Bold font for top-level items */
   margin-bottom: 10px; /* Space between items */
   line-height: 1; /* Improved line height for readability */
-  font-size: 1rem;
-  max-width: 99%; /* Optional: add some spacing to the right */
+  font-size: 0.8rem;
+  max-width: 98%; /* Optional: add some spacing to the right */
 }
 
 .toc-list .toc-list {
@@ -478,7 +478,7 @@ line-height: 1.25;
 
 .toc-link {
   color: black; /* Link color */
-  font-size: 1.13rem; /* Uniform font size */
+  font-size: 1rem; /* Uniform font size */
   line-height: 1.2; /* Improved line height for readability */
   padding: 2px 4px; /* Add padding around the text */
   border-radius: 4px; /* Optional: round the corners for a smoother effect */
@@ -552,7 +552,7 @@ iframe.modal-content {
   }
 
 .toc-link { 
-font-size: 1.1rem;
+/* font-size: 1.1rem; */
 line-height: 1.1;
 }
 }
