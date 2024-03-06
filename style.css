@@ -1,0 +1,598 @@
+html{
+  font-size: 1rem;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto",
+    "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+}
+
+header,
+footer {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+}
+
+p,
+li,
+blockquote
+ {
+  line-height: 1.5;
+  /* font-size: 1.25rem; */
+  margin-top: 0;
+  text-align: left;
+  color: rgb(73, 78, 82);
+  font-weight: 400;
+  width: 100%;
+}
+
+blockquote {
+  border-left: 0.25rem solid #3eb0ef;
+  background-color: #f9f9f9;
+  /* margin: 1em 2em 2em 1em !important; */
+  padding: 0.7em;
+  width: 90%;
+  /* padding-right: 1em; */
+  /* min-width: 100%; */
+  box-sizing: border-box;
+}
+/* 
+ol,
+ul {
+  width: 100%;
+  margin-left: 1rem;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: left;
+  font-weight: bold;
+  min-width: 100%;
+  box-sizing: border-box; 
+}
+
+h1 {
+  margin-top: 0;
+}
+
+
+
+input,
+button {
+  font-size: 1.1rem;
+}
+
+li {
+  padding-bottom: 1em;
+}
+
+.essay-list li {
+  padding-bottom: 0;
+}
+
+.toc-list li {
+  padding-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  p,
+  li,
+  blockquote {
+    font-size: 1rem;
+  }
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.5em 0 0.5em;
+  line-height: 1.2;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-weight: bold
+}
+
+/* h1 {
+  margin-top: 0;
+  font-size: 1.563em
+}
+
+h2 {
+  font-size: 1.25em
+}
+
+h3 {
+  font-size: 1em
+}
+
+h4 {
+  font-size: .75em
+}
+
+h5 {
+  font-size: .75em
+}
+
+h6 {
+  font-size: .75em
+} */
+
+article h1 {
+  font-size: 2rem;
+  opacity: 0.7;
+}
+
+article h2 {
+  font-size: 1.7rem;
+}
+
+article h3 {
+  font-size: 1.4rem;
+  opacity: 0.7;
+}
+
+
+h2,
+h4,
+h5,
+h6 {
+  box-shadow: 0 1.5px 0 0 rgba(180, 180, 180, 0.3); /* Horizontal shadow as underline */
+  padding-bottom: 0.5em; /* Space between text and underline */
+  opacity: 0.7;
+}
+
+img {
+  border: 0.1rem solid black;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  background: white;
+  box-sizing: border-box;
+}
+
+a {
+  color: #121212;
+}
+
+section {
+  margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.full-height {
+  grid-row: span 3;
+}
+
+input[type="email"] {
+  padding: 0.5em;
+  color: #494e52;
+  background-color: #fff;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.4rem;
+  box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.125);
+}
+
+button[type="button"] {
+  background-color: black;
+  color: white;
+  border: 1px solid #ff1a75;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscription {
+  display: flex;
+  width: 100%;
+  height: 3.3em;
+  margin: 2rem auto;
+}
+
+.subscription input[type="email"] {
+  flex: 3;
+}
+
+.subscription button[type="button"] {
+  flex: 1;
+}
+
+figcaption {
+  width: 95%;
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgb(119, 122, 125);
+  margin: 1rem auto;
+}
+
+figcaption a {
+  color: rgb(119, 122, 125);
+}
+
+.fig-color {
+  color: rgb(235, 235, 235);
+}
+
+figure {
+  margin: 1rem auto;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.navbar a:nth-child(2) {
+  margin-left: 2rem;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+article {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 85vw;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-top: 0;
+  max-width: 750px;
+}
+
+.main-content {
+  padding: 2rem;
+  padding-top: 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+
+
+
+.bio-wrapper {
+  border: 0.1rem solid #7036e38f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem;
+  margin-left: calc(-5vw); /* Negative margin to keep it centered */
+  margin-right: calc(-5vw);
+  width: calc(100% + 10vw); /* Making it slightly wider than its container */
+}
+
+.bio-wrapper p {
+font-size: 1.25rem;
+line-height: 1.25;
+} 
+.essay-list {
+  list-style-type: katakana;
+  color: #8f240ccc;
+  margin: 0;
+}
+
+.collage {
+  display:flex;
+  flex-direction: column
+}
+
+/* Grid layout for projects */
+.projects {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  gap: 2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+}
+
+.full-height {
+  grid-row: span 3;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 261px);
+  grid-gap: 3px;
+  justify-content: center;
+  margin: auto;
+}
+
+.gallery-item {
+  width: 261px;
+  margin-bottom: 3px;
+}
+
+.thumbnail,
+.thumbnail-grid {
+  display: block;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+  border: 0.1rem solid black;
+  background: white;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.modal {
+  padding-top: 100px;
+  background-color: rgba(1, 1, 1, 0.9);
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  border: none;
+}
+
+.modal-content {
+  max-height: 80vh; /* Limit the height to 70% of the viewport height */
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: rgb(235, 235, 235);
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.op {
+  font-size: 1.05rem;
+  border-radius: 0.3rem;
+  background: rgb(0 0 0 / 3%);
+  padding: 0.5rem;
+}
+
+.my_meta {
+  font-size: 1rem;
+  font-style: italic;
+  /* width: 60%; */
+}
+
+.tldr {
+  padding: 1rem;
+  border: 1px solid orange;
+  background: rgb(244 70 17 / 3%);
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.thanks {
+  padding: 1rem;
+  font-size: smaller;
+  border: 1px solid #9033e74f;
+  background: rgb(110 102 102 / 12%);
+}
+
+.thumbnail {
+  display: block;
+  height: auto;
+  object-fit: cover;
+  width: 100%; /* This will make the image responsive to the container's width */
+  max-width: 261px; /* Ensures that the image is not wider than the container */
+  width: 100%;
+  border: 0.1rem solid black;
+  background: white;
+  box-sizing: border-box; /* Include padding and border in the element's width and height */
+}
+
+.thumbnail-grid {
+  width: 100%; /* will scale the width to fit the container */
+  height: auto; /* will maintain the aspect ratio */
+  object-fit: contain; /* will ensure the image is fully visible */
+  display: block; /* remove inline styling default of images */
+  margin: 0 auto; /* center the image within its container */
+  border: 0.1rem solid black; /* optional border */
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.thumbnail-1 {
+  width: 25%;
+}
+
+.gallery-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 0.1rem;
+}
+
+.toc2 {
+  border: 2px solid #40e0d063; /* Semi-transparent border color */
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.toc-list {
+  list-style: numbers; /* No bullets for any list */
+  margin: 0; /* No default margin for any list */
+  padding: 0; /* No default padding for top-level list */
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+
+.toc2 > ol:first-child > li:first-child {
+  list-style-type: none;
+}
+
+.toc-list-item {
+  font-weight: bold; /* Bold font for top-level items */
+  margin-bottom: 10px; /* Space between items */
+  line-height: 1; /* Improved line height for readability */
+  font-size: 1rem;
+  max-width: 99%; /* Optional: add some spacing to the right */
+}
+
+.toc-list .toc-list {
+  padding-left: 20px; /* Indent for nested lists */
+}
+
+.toc-list .toc-list .toc-list-item {
+  font-weight: normal; /* Normal font weight for nested items */
+}
+
+.toc-link {
+  color: black; /* Link color */
+  font-size: 1.13rem; /* Uniform font size */
+  line-height: 1.2; /* Improved line height for readability */
+  padding: 2px 4px; /* Add padding around the text */
+  border-radius: 4px; /* Optional: round the corners for a smoother effect */
+  display: inline; /* Ensure background only covers the text */
+  box-decoration-break: clone; /* Ensure background wraps nicely around text */
+  -webkit-box-decoration-break: clone; /* Same as above for WebKit browsers */
+ 
+}
+
+.toc-link:hover,
+.toc-link.is-active-link {
+  text-decoration: underline; /* Underline on hover and for active link */
+}
+
+/* Styles for showing/hiding collapsible lists */
+.is-collapsible {
+  display: none; /* Hide by default */
+}
+
+.is-active-li > .is-collapsible {
+  display: block; /* Show when parent is active */
+}
+
+/* Style the modal content (iframe) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%; /* You can adjust this as needed */
+  max-width: 700px; /* Maximum width of the content */
+  height: auto;
+  border: none;
+}
+
+/* Add some style to the iframe */
+iframe.modal-content {
+  height: calc(100vh - 60px); /* Full viewport height minus some margin */
+  width: calc(100vw - 40px); /* Full viewport width minus some margin */
+  border: none;
+}
+
+@media (max-width: 767px) {
+  .toc-list-item {
+    max-width: 95%; /* Optional: add some spacing to the right */
+  }
+  .toc-link { 
+    font-size: 0.9rem;
+    line-height: 1.1;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .main-content {
+    width: 85vw;
+    margin: 0 auto;
+  }
+  .footer-subscription {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 1025px) {
+  article {
+    max-width: 800px;
+  }
+  .toc-list-item {
+    font-weight: bold; /* Bold font for top-level items */
+    margin-bottom: 10px; /* Space between items */
+    line-height: 1; /* Improved line height for readability */
+    font-size: 1rem;
+    max-width: 98%; /* Optional: add some spacing to the right */
+  }
+
+.toc-link { 
+font-size: 1.1rem;
+line-height: 1.1;
+}
+}
+@media (min-width: 1200px) {
+  .main-content {
+    width: 800px;
+    margin: 0 auto;
+  }
+  .footer-subscription {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-content {
+    width: 100%;
+  }
+  article {
+    width: 95%;
+  }
+  .footer-subscription,
+  .bio-wrapper {
+    display: flex;
+    margin: 1rem auto;
+    justify-content: center;
+  }
+
+  .bio-wrapper {
+    width: 100% !important;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+
+  .navbar {
+    width: 80%;
+    margin: 0 auto;
+    grid-gap: 0.5rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+}
