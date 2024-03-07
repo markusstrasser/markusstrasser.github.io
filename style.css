@@ -72,11 +72,17 @@ button {
 }
 
 li {
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
 }
 
+.essay-list {
+  font-size:1.15rem;
+  list-style-type: katakana;
+  
+}
 .essay-list li {
-  padding-bottom: 0;
+  line-height:1.1;
+  color: #8f240ccc;
 }
 
 .toc-list li {
@@ -157,7 +163,7 @@ img {
 }
 
 a {
-  color: #121212;
+  color: #4b3b68;
 }
 
 section {
@@ -193,7 +199,7 @@ button[type="button"] {
   display: flex;
   width: 100%;
   height: 3.3em;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
 .subscription input[type="email"] {
@@ -207,7 +213,6 @@ button[type="button"] {
 figcaption {
   width: 95%;
   text-align: center;
-  font-size: 1.2rem;
   color: rgb(119, 122, 125);
   margin: 1rem auto;
 }
@@ -259,7 +264,8 @@ article {
 }
 
 .main-content {
-  padding: 2rem;
+  padding: 1.5rem;
+  font-size: 0.8rem;
   padding-top: 0;
   align-items: center;
   display: flex;
@@ -275,21 +281,20 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius:3px;
   padding: 1.2rem;
+  max-width: 650px;
   margin-left: calc(-5vw); /* Negative margin to keep it centered */
   margin-right: calc(-5vw);
   width: calc(100% + 10vw); /* Making it slightly wider than its container */
 }
 
 .bio-wrapper p {
-font-size: 1.25rem;
+font-size: 1.1rem;
+font-weight: 350;
 line-height: 1.25;
 } 
-.essay-list {
-  list-style-type: katakana;
-  color: #8f240ccc;
-  margin: 0;
-}
+
 
 .collage {
   display:flex;
