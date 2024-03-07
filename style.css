@@ -236,6 +236,7 @@ figure {
 
 .navbar {
   display: grid;
+  text-decoration: underline;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
   width: 30%;
@@ -243,7 +244,7 @@ figure {
 }
 
 .navbar a:nth-child(2) {
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .nav-item {
@@ -577,6 +578,7 @@ line-height: 1.1;
     justify-content: center;
   }
 }
+
 
 @media (max-width: 767px) {
   .main-content {
