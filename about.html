@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website Title</title>
+    <title>Markus Strasser. Art, Essays, Programs</title>
     <meta property="og:site_name" content="Site of Markus Strasser" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="About" />
@@ -54,7 +54,9 @@
     <main>
       <div class="main-content">
         <section>
-          <h2>Some <strong>traditional art</strong></h2>
+          <h2>Traditional Fine Art Drawings</h2>
+          Click Thumbnail to enhance
+          <hr/>
           <div class="gallery">
             <div class="gallery-item">
               <img
@@ -102,7 +104,7 @@
           <!-- Other Grid with images 1_lossy.webp through 17_lossy.webp -->
 
           <!-- Other Other Grid with videos 1-1.mp4 through 1-10.mp4 -->
-          <h2>Other Other Grid</h2>
+          <h2>Animations</h2>
           <div class="gallery">
             <!-- Videos with data-caption attribute -->
             <div class="gallery-item">
@@ -120,7 +122,7 @@
               <img
                 class="thumbnail-grid"
                 src="images/target_webp_mp4_lossy/contemplating_lossy.webp"
-                data-caption="contemplating"
+                data-caption="Contemplating"
                 data-video-url="https://player.vimeo.com/video/800670933"
               />
             </div>
@@ -130,7 +132,7 @@
               <img
                 class="thumbnail-grid"
                 src="images/target_webp_mp4_lossy/delta_lossy.webp"
-                data-caption="delta"
+                data-caption="Delta"
                 data-video-url="https://player.vimeo.com/video/800664569"
               />
             </div>
@@ -140,7 +142,7 @@
               <img
                 class="thumbnail-grid"
                 src="images/target_webp_mp4_lossy/eclectic_lossy.webp"
-                data-caption="eclectic"
+                data-caption="Eclectic"
                 data-video-url="https://player.vimeo.com/video/800614848"
               />
             </div>
@@ -150,7 +152,7 @@
               <img
                 class="thumbnail-grid"
                 src="images/target_webp_mp4_lossy/memento_mori_lossy.webp"
-                data-caption="memento mori"
+                data-caption="Memento Mori"
                 data-video-url="https://player.vimeo.com/video/800614789"
               />
             </div>
@@ -160,7 +162,7 @@
               <img
                 class="thumbnail-grid"
                 src="images/target_webp_mp4_lossy/solitude_lossy.webp"
-                data-caption="solitude"
+                data-caption="Solitude"
                 data-video-url="https://player.vimeo.com/video/801004647"
               />
             </div>
@@ -180,7 +182,7 @@
               <img
                 class="thumbnail-grid"
                 src="images/target_webp_mp4_lossy/under_her_skin_lossy.webp"
-                data-caption="under her skin"
+                data-caption="Skindeep"
                 data-video-url="https://player.vimeo.com/video/800655029"
               />
             </div>
@@ -190,16 +192,15 @@
               <img
                 class="thumbnail-grid"
                 src="images/target_webp_mp4_lossy/1-4_lossy.webp"
-                data-caption="temptation"
+                data-caption="Temptation"
                 data-video-url="https://player.vimeo.com/video/919780757"
 
               />
             </div>
 
           </div>
-          <h2>Other Other Other Grid</h2>
+          <!-- <h2>Other Other Other Grid</h2>
           <div class="gallery">
-            <!-- Videos with data-caption attribute -->
             <div class="gallery-item">
               <img
                 class="thumbnail-grid"
@@ -257,8 +258,8 @@
                 data-original="images/lossless_vids/1-10.mp4"
               />
             </div>
-          </div>
-          <h2>World Building</h2>
+          </div> -->
+          <h2>World Building using Image Models</h2>
 
           <div class="collage">
             <img
@@ -347,7 +348,7 @@
             </div>
           </div> -->
 
-          <h2>Some other<strong>traditional art</strong></h2>
+          <h2>Pencil Sketches</h2>
           <div class="gallery">
             <div class="gallery-item">
               <img
@@ -387,29 +388,46 @@
             </div>
           </div>
         </section>
+
+        <form class="subscribe" action="https://markusstrasser.us1.list-manage.com/subscribe/post?u=26523daccf732866dbe6ae9e4&amp;id=9f6d5c2423" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
+          <input type="email" name="EMAIL" placeholder=" 💌 your email ↩︎ " class="required email" id="mce-EMAIL" required>
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <!-- Do not remove this or risk form bot signups -->
+              <input type="text" name="b_26523daccf732866dbe6ae9e4_9f6d5c2423" tabindex="-1" value="">
+          </div>
+          <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="submitbutton">subscribe</button>
+      </form>
+      <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+    
       </div>
+      <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <figure>
+          <!-- Image content will be inserted here if it's an image -->
+          <img class="modal-content" id="img01" style="display: none" />
+          <!-- Iframe for Vimeo video will be inserted here -->
+          <iframe
+            class="modal-content"
+            id="video01"
+            style="display: none"
+            allowfullscreen
+          ></iframe>
+          <figcaption class="fig-color" id="caption"></figcaption>
+        </figure>
+       
+  
+      </div>
+  
+   
     </main>
-    <div id="imageModal" class="modal">
-      <span class="close">&times;</span>
-      <figure>
-        <!-- Image content will be inserted here if it's an image -->
-        <img class="modal-content" id="img01" style="display: none" />
-        <!-- Iframe for Vimeo video will be inserted here -->
-        <iframe
-          class="modal-content"
-          id="video01"
-          style="display: none"
-          allowfullscreen
-        ></iframe>
-        <figcaption class="fig-color" id="caption"></figcaption>
-      </figure>
-    </div>
+ 
+
+
+
+   
 
     <footer class="footer">
-      <div class="footer-subscription">
-        <input type="email" placeholder="💌 your email ↩︎" />
-        <button type="button">subscribe</button>
-      </div>
+    
     </footer>
 
     <script>

@@ -177,6 +177,13 @@ section {
   grid-row: span 3;
 }
 
+.subscribe {
+  display: flex;
+  width: 100%;
+  height: 3.3em;
+  margin: 1rem auto;
+}
+
 input[type="email"] {
   padding: 0.5em;
   color: #494e52;
@@ -186,21 +193,17 @@ input[type="email"] {
   box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.125);
 }
 
-button[type="button"] {
+button {
   background-color: black;
   color: white;
+  /* height: 3.3em; */
+
   border: 1px solid #ff1a75;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.subscription {
-  display: flex;
-  width: 100%;
-  height: 3.3em;
-  margin: 1rem auto;
-}
 
 .subscription input[type="email"] {
   flex: 3;
@@ -211,10 +214,12 @@ button[type="button"] {
 }
 
 figcaption {
+  padding: 0.3rem;
+  /* background: #fff0cb4a; */
   width: 95%;
   text-align: center;
   color: rgb(119, 122, 125);
-  margin: 1rem auto;
+  /* margin: 1rem auto; */
 }
 
 figcaption a {
@@ -328,6 +333,7 @@ line-height: 1.25;
 }
 
 .gallery-item {
+  cursor: pointer; 
   width: 261px;
   margin-bottom: 3px;
 }
