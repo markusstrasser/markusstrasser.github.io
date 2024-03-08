@@ -15,7 +15,7 @@ body {
 }
 
 html, body {
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 
@@ -60,7 +60,7 @@ blockquote {
 
 ol,
 ul {
-  width: 100%;
+  width: 90%;
   margin-left: 1rem;
 }
 
