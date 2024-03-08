@@ -1,6 +1,12 @@
 html{
   font-size: 1rem;
 }
+
+* {
+  border: 1px solid red;
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -8,10 +14,20 @@ body {
     "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 }
 
+html, body {
+  /* overflow-x: hidden; */
+}
+
+
 header,
 footer {
   padding: 1rem 0;
   text-align: center;
+}
+
+img, video, .container, .section { //no overflow on mobile 
+  max-width: 100%;
+  height: auto; /* For images and videos to maintain aspect ratio */
 }
 
 footer {
@@ -276,9 +292,8 @@ article {
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 0 auto
 }
-
 
 
 
@@ -288,11 +303,8 @@ article {
   justify-content: center;
   align-items: center;
   border-radius:3px;
-  padding: 1.2rem;
-  max-width: 650px;
-  margin-left: calc(-5vw); /* Negative margin to keep it centered */
-  margin-right: calc(-5vw);
-  width: calc(100% + 10vw); /* Making it slightly wider than its container */
+  padding: 1.3rem;
+  max-width: 700px;
 }
 
 .bio-wrapper p {
@@ -456,7 +468,7 @@ line-height: 1.25;
 
 .toc2 {
   border: 2px solid #40e0d063; /* Semi-transparent border color */
-  margin: 1rem;
+  /* margin: 1rem; */
   padding: 1rem;
 }
 
@@ -540,17 +552,16 @@ iframe.modal-content {
     line-height: 1.1;
     }
 }
-
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 820px) {
   .main-content {
-    width: 85vw;
-    margin: 0 auto;
-  }
-  .footer-subscription {
-    display: flex;
-    justify-content: center;
-  }
-}
+    width: 800px;
+}}
+
+@media (min-width: 788px, max-width: 819px) {
+  .main-content {
+    width: 720px;
+}}
+
 @media (max-width: 1025px) {
   article {
     max-width: 800px;
@@ -568,26 +579,16 @@ iframe.modal-content {
 line-height: 1.1;
 }
 }
-@media (min-width: 1200px) {
-  .main-content {
-    width: 800px;
-    margin: 0 auto;
-  }
-  .footer-subscription {
-    display: flex;
-    justify-content: center;
-  }
-}
 
 
 @media (max-width: 767px) {
   .main-content {
-    width: 100%;
+    /* width: 100%; */
   }
   article {
-    width: 95%;
+    /* width: 95%; */
   }
-  .footer-subscription,
+  /* .footer-subscription,
   .bio-wrapper {
     display: flex;
     margin: 1rem auto;
@@ -598,7 +599,7 @@ line-height: 1.1;
     width: 100% !important;
     margin-left: 1rem !important;
     margin-right: 1rem !important;
-  }
+  } */
 
   .navbar {
     width: 80%;
@@ -609,3 +610,17 @@ line-height: 1.1;
     font-size: 1rem;
   }
 }
+
+/* 
+@media screen and (min-width: 1000px) {
+  .main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); // Creates a responsive number of columns
+    gap: 5rem; // Adjusts the gap between grid items 
+  }
+
+
+  .bio-wrapper, .essay-list, section {
+    display: block; // Override other display settings if necessary 
+  }
+} */
